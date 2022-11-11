@@ -46,5 +46,4 @@ while chance > 0:
     
 # menampilkan jumlah skor
 print('Total benar:', totalBenar)
-    
-    
+
