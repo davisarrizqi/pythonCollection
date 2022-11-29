@@ -37,11 +37,26 @@ print("Penyelesaian Tugas\n")
 print('1. Penyelesaian\n', numpy.array(A) - numpy.array(B)); print('')
 
 # 2. Menunjukkan hasil perkalian mA dengan mB
-print('2. Penyelesaian\n', numpy.array(mA) * numpy.array(mB)); print('')
+print('2. Penyelesaian\n', numpy.multiply(mA, mB)); print('')
 
 # 3. Transpose matriks mB menjadi ordo 3x2
 print('3. Penyelesaian')
 mB = numpy.transpose(mB); print(mB, '\n')
 
 # 4. Menunjukkan ordo matriks mB
-print('4. Penyelesaian\n')
+print('4. Penyelesaian')
+print(numpy.shape(mB), '\n')
+
+# 5. Mengerjakan soal nomor 2
+print('5. Penyelesaian\n', mA1.dot(mB)); print('')
+
+# 6. Membuat vektor baris "vc"
+print('6. Penyelesaian')
+mA, mB = mA1.flatten(), mB1.flatten()
+vc = numpy.concatenate((mA, mB))
+print(mA, mB, sep=' -+- ')
+print(vc, '\n')
+
+# 7. Menghitung nilai terendah, tertinggi, rata rata, dan standar deviasi
+minValue = numpy.min(vc)
+maxValue = numpy.max(vc)
